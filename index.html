@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container untuk Course Management -->
+    <div class="container">
+        <h1>Course Management</h1>
+        
+        <!-- Form untuk membuat atau mengupdate Course -->
+        <div class="course-form">
+            <h2>Buat atau Update Course</h2>
+            <input type="hidden" id="course-id">
+            <input type="text" id="course-title" placeholder="Judul Course">
+            <input type="text" id="course-description" placeholder="Deskripsi Course">
+            <input type="text" id="course-duration" placeholder="Durasi Course">
+            <button onclick="saveCourse()">Save Course</button>
+        </div>
+        
+        <!-- Daftar Course yang sudah dibuat -->
+        <div class="course-list">
+            <h2>Course List</h2>
+            <ul id="courses"></ul>
+        </div>
+    </div>
+
+    <!-- Container untuk Material Management -->
+    <div class="container">
+        <h1>Material Management</h1>
+        
+        <!-- Form untuk menambahkan atau mengupdate material ke Course -->
+        <div class="material-form">
+            <h2>Tambahkan atau Update Material Course</h2>
+            <input type="hidden" id="material-id">
+            <input type="text" id="material-title" placeholder="Judul Material">
+            <input type="text" id="material-description" placeholder="Deskripsi Material">
+            <input type="text" id="material-link" placeholder="Link Material">
+            <button onclick="saveMaterial()">Save Material</button>
+        </div>
+        
+        <!-- Daftar material yang terkait dengan Course yang dipilih -->
+        <div class="material-list">
+            <h2>Material List</h2>
+            <ul id="materials"></ul>
+        </div>
+    </div>
+
+    <!-- Link ke file JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
